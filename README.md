@@ -85,3 +85,34 @@ fa0662f (dev) This is index
 gymisaro@Isaros-iMac Git-solutions % git reset --hard 2948337
 HEAD is now at 2948337 This is stash
 ```
+
+## Bundle 2
+
+## Exercise 1
+
+```bash
+
+gymisaro@Isaros-iMac Git-solutions % git checkout -b ft/bundle-2
+
+Switched to a new branch 'ft/bundle-2'
+gymisaro@Isaros-iMac Git-solutions % git add .
+gymisaro@Isaros-iMac Git-solutions % git commit -m "Services"  
+[ft/bundle-2 69d1b08] Services
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+gymisaro@Isaros-iMac Git-solutions % git push origin ft/bundle-2
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 438 bytes | 438.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Nshutitricia/Git-solutions/pull/new/ft/bundle-2
+remote: 
+To https://github.com/Nshutitricia/Git-solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+ ```
