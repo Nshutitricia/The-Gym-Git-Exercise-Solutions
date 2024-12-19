@@ -38,5 +38,50 @@ Deleted branch test (was fa0662f).
 ## Exercise 2
 
 ```bash
+gymisaro@Isaros-iMac Git-solutions % git stash pop stash@{1}
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
 
+Dropped stash@{1} (a10ebba247e6db02235c7cd16d4f5d4bd33d3a4f)
+gymisaro@Isaros-iMac Git-solutions % git stash pop stash@{1}
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   home.html
+
+Dropped stash@{1} (bf040a9add53b5beb08b06d8cdc4cf2f8e24e698)
+
+gymisaro@Isaros-iMac Git-solutions % git commit -m "This is stas
+h"
+[master 2948337] This is stash
+ 2 files changed, 22 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ gymisaro@Isaros-iMac Git-solutions % git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 513 bytes | 513.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Nshutitricia/Git-solutions.git
+   fa0662f..2948337  master -> master
+   gymisaro@Isaros-iMac Git-solutions % git stash pop stash@{0}
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped stash@{0} (cb3f88f26f90d64502871d717be3724e6755bd1d)
+
+gymisaro@Isaros-iMac Git-solutions % git log --oneline
+2948337 (HEAD -> master, origin/master) This is stash
+fa0662f (dev) This is index
+'git <command> [<revision>...] -- [<file>...]'
+gymisaro@Isaros-iMac Git-solutions % git reset --hard 2948337
+HEAD is now at 2948337 This is stash
 ```
